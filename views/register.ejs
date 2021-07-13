@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="/singup.css">
+      <title>SIESGSTarena</title>
+</head>
+<body>    
+
+
+
+    <form action="/register" method="POST">
+    <div class="form">
+        <h3 class="title">Let's Get <br> <span>Started</span></h3>
+        <i class="material-icons" style="color: white;">
+            account_circle
+        </i>
+        <div class="content">
+            <div>
+                <input class="input" type="username" placeholder="User Name" id="username" name="username" required></input>
+              
+            </div>
+            <div>
+              <input class="input" type="tel" id="phone" placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" name="phone"></input>
+</div>
+            <div>
+                <input class="input" type="email" placeholder="Email as @siesgst.ac.in" id="email" name="email" multiple pattern=".+@siesgst.ac\.in" size="30" value="" multiple ></input>
+               
+            </div>                                 
+            <div>
+                <input class="input" type="password" placeholder="Password" id="password" name="password" required></input>
+               
+            </div>
+        <div><a href="/login">  <button  type="submit" class="button">SIGN UP</button> </a> </div>
+        <p class="aha">Already have an account? <span><a href="/login"> Sign In</a></span></p>
+        </div>
+    </div>
+
+</form>
+
+
+    
+</body>
+</html>
